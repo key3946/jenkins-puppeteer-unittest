@@ -1,7 +1,7 @@
 pipeline {
     agent { dockerfile true }
     environment{
-        npm_config_cache=npm-cache
+        npm_config_cache='npm-cache'
     }
     stages {
         stage('prepare-test') {
