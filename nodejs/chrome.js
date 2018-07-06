@@ -1,5 +1,3 @@
-const fs = require('fs');
-const assert = require('assert');
 const puppeteer = require('puppeteer');
 exports.getUrl = async function getUrl(url) {
     const browser = await puppeteer.launch();
