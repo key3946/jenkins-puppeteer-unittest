@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('prepare-test') {
             steps {
-                sh 'cd nodejs && npm install'
+                sh 'chmod +w nodejs && cd nodejs && npm install'
             }
         }
         stage('unit-test') {
