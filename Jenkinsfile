@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('prepare-test') {
             environment{
-                HOME=.
+                HOME='.'
             }
             steps {
                 sh 'chmod 777 nodejs && cd nodejs && sudo npm install'
