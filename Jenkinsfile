@@ -9,7 +9,7 @@ pipeline {
                 HOME='.'
             }
             steps {
-                sh 'chmod 777 nodejs && cd nodejs && sudo npm install'
+                sh 'chmod 777 nodejs && cd nodejs && npm install'
             }
         }
         stage('unit-test') {
